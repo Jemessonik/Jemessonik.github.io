@@ -1,0 +1,281 @@
+body{
+font-family: 'Montserrat', sans-serif;
+font-size: 15pz;
+color: #333;
+line-height: 1,6;
+margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+margin: 0;
+}
+
+*,
+*:after,
+*^before{
+box-sizing: border-box;
+}
+/*Container*/
+.container{
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+/*intro*/
+.intro{
+background: url("../img/intro.jpg")no-repeat center center;
+height:120vh;
+width: 100%;
+background-size: cover;
+flex-direction: column;
+justify-content: center;
+display: flex;
+}
+
+.intro_inner{
+width: 100%;
+max-width: 880px;
+margin: 0 auto;
+text-align: center;
+}
+
+.intro_suptitle{
+text-align: center;
+font-size: 40px;
+color: #fff;
+font-family: 'Kaushan Script', cursive;
+margin-bottom: 15px;
+}
+
+.intro_title{
+color: #fff;
+font-size: 110px;
+text-transform: uppercase;
+font-weight: 700;
+text-align: center;
+line-height: 1.1;
+}
+
+.intro_title:after{
+content: "";
+display: block;
+width: 60px;
+height: 3px;
+margin: 60px auto;
+background-color: #fff;
+}
+
+/*Header*/
+.header{
+width: 100%;
+z-index: 1000;
+top: 0;
+left: 0;
+right: 0;
+position: absolute;
+padding-top: 30px;
+}
+.header-inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+font-size: 30px;
+font-weight: 700;
+color: #fff;
+}
+
+/*nav*/
+.nav{
+font-size: 14px;
+text-transform: uppercase;
+
+}
+
+.nav_link{
+text-decoration: none;
+color: #fff; 
+vertical-align: top;
+margin: 0 10px;
+position: relative;
+}
+
+.nav_link:hover{
+color: #fce38a;
+border-bottom: 2px solid #fce38a; /* Параметры линии под текстом */
+  font-weight: normal; /* Убираем жирное начертание */
+  padding-bottom: 5px; /* Расстояние от текста до линии */
+  transition: .2s;
+}
+
+.nav_link.active{
+border-bottom: 2px solid #fce38a; /* Параметры линии под текстом */
+font-weight: normal; /* Убираем жирное начертание */
+padding-bottom: 5px; /* Расстояние от текста до линии */
+color:#fce38a ;
+
+}
+
+/*Buttom*/
+
+
+.btn{
+display: inline-block;
+vertical-align: top;
+border: 3px solid #fff;
+padding: 8px 50px;
+color: #fff;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+text-decoration: none;
+}
+
+.btn:hover{
+background: #fff;
+color: #000;
+transition: .2s;
+}
+
+/*Slider*/
+
+.slider{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
+  padding-top: 80px;
+}
+
+.slider_item{
+  position: relative;
+width: 24%;
+font-size: 18px;
+color: #fff;
+padding: 20px 0;
+border-top: 3px solid #fff;
+opacity: .7;
+}
+
+.slider_num{
+  font-size: 24px;
+  font-weight: 700;
+
+}
+
+.slider_item.active{
+opacity: 1;
+}
+
+.slider_item.active:before{
+content: "";
+display: block;
+top: -3px;
+left: 0;
+right: 0;
+width: 70px;
+height: 3px;
+z-index: 1;
+position: absolute;
+background-color: #f38181;
+}
+
+
+/*Section*/
+
+.section{
+padding: 80px 0;
+}
+
+.Section_header{
+width: 100%;
+max-width: 950px;
+margin: 0 auto 40px;
+text-align: center;
+
+}
+
+
+.section_suptitle{
+font-family: 'Kaushan Script', cursive;
+font-size: 24px;
+color: #333;
+}
+
+.section_title{
+font-size: 30px;
+font-weight: 700;
+text-transform: uppercase;
+color: #333;
+}
+
+
+.section_text{
+color: #999;
+font-size: 15px;
+font-family: 'Roboto', sans-serif;
+}
+
+
+.section_title:after{
+content: "";
+display: block;
+width: 60px;
+height: 3px;
+background-color: #f38181;
+margin: 40px auto;
+}
+/*About*/
+.about_2img{
+width: 300px;
+height: 200px;
+justify-content: space-between;
+}
+
+.about_img{
+display: flex;
+}
+
+.about{
+ display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about__item{
+width: 380px;
+background-color: #95e1d3;
+  transition: transform .2s linear;
+}
+
+.about__item:hover{
+  background: linear-gradient(#F38181, #fce38a);
+  transform: translate3d(-10px, -10px, 0px);
+}
+
+.about__img{
+background: linear-gradient(#F38181, #fce38a);
+transition: transform .2s linear;
+}
+
+.about__item:hover .about__img{
+opacity: .1;
+}
+
+.about__img img{
+  display: block;
+  transition: opacity .3s linear;
+}
+
+.about_text{
+width: 100%;
+text-align: center;
+text-transform: uppercase;
+font-size: 18px;
+font-weight: 700;
+color: #fff;
+top: 50%;
+left: 0;
+z-index: 2;
+ transition: opacity .1s linear;
+}
